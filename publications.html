@@ -24,9 +24,19 @@
 //         };
 //       });
 
-     $(function() {
-        document.getElementById("load_venues").onclick = function() {
-            $("#includedContent").load("venues.html"); 
+ //    $(function() {
+  //      document.getElementById("load_venues").onclick = function() {
+   //         $("#includedContent").load("venues.html"); 
+   //     };
+   //   });
+         $(function() {
+        document.getElementById("load_Featured").onclick = function() {
+            $("#includedContent").load("Featured.html"); 
+        };
+      });
+         $(function() {
+        document.getElementById("load_Top-Ranked").onclick = function() {
+            $("#includedContent").load("Top-Ranked.html"); 
         };
       });
 
@@ -40,14 +50,14 @@
      // $("document").ready(function() {
      //       $("#includedContent").load("years.html"); 
      //   }); 
-   // </script>
+    </script>
 
 </head>
 
 <body>
 <table summary="Table for page layout." id="tlayout">
 <tr valign="top">
-<h1 style="padding-left: 0.5em">Tongliang Liu </h1><hr>
+<h1 style="padding-left: 0.5em">Chenping Hou </h1><hr>
 <td id="layout-menu">
     <div class="menu-item"><a href="index.html">Home</a></div>
     <div class="menu-item"><a href="groups.html">Group</a></div>
@@ -73,7 +83,7 @@
 
 
         <span style="font-size: 22;">
-         Sorted <a id="load_years">Publications by Year</a>, <a id="load_venues">Featured Publications</a>, <a id="load_top">Top-Ranked Publications</a>.
+         Sorted <a id="load_years">Publications by Year</a>, <a id="load_Featured">Featured Publications</a>, <a id="load_Top-Ranked">Top-Ranked Publications</a>.
         </span>
 
         <div id="includedContent">
